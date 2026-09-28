@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FF121212"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#FF666666"
+        android:gravity="center_vertical"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:text="Hello TableLayout"
+        android:textColor="#FFFFFFFF"
+        android:textSize="18sp" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1">
+
+        <TableRow>
+
+            <TextView
+                style="@style/TableCell"
+                android:layout_column="1"
+                android:text="Open..." />
+
+            <TextView
+                style="@style/TableCell"
+                android:gravity="end"
+                android:text="Ctrl-O" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                style="@style/TableCell"
+                android:layout_column="1"
+                android:text="Save..." />
+
+            <TextView
+                style="@style/TableCell"
+                android:gravity="end"
+                android:text="Ctrl-S" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                style="@style/TableCell"
+                android:layout_column="1"
+                android:text="Save As..." />
+
+            <TextView
+                style="@style/TableCell"
+                android:gravity="end"
+                android:text="Ctrl-Shift-S" />
+        </TableRow>
+
+        <View
+            android:layout_height="1dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="6dp"
+            android:background="#FF909090" />
+
+        <TableRow>
+
+            <TextView
+                style="@style/TableCell"
+                android:text="X" />
+
+            <TextView
+                style="@style/TableCell"
+                android:text="Import..." />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                style="@style/TableCell"
+                android:text="X" />
+
+            <TextView
+                style="@style/TableCell"
+                android:text="Export..." />
+
+            <TextView
+                style="@style/TableCell"
+                android:gravity="end"
+                android:text="Ctrl-E" />
+        </TableRow>
+
+        <View
+            android:layout_height="1dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="6dp"
+            android:background="#FF909090" />
+
+        <TableRow>
+
+            <TextView
+                style="@style/TableCell"
+                android:layout_column="1"
+                android:text="Quit" />
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>

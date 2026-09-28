@@ -1,0 +1,48 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Exp_02" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="Theme.Exp_02" parent="Base.Theme.Exp_02" />
+
+    <style name="Theme.Exp_02.Light" parent="Theme.Material3.Light.NoActionBar">
+        <item name="android:windowBackground">@android:color/white</item>
+    </style>
+
+    <style name="Theme.Exp_02.Table" parent="Theme.Material3.Dark.NoActionBar">
+        <item name="android:windowBackground">#FF121212</item>
+    </style>
+
+    <style name="LinearGridCell">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">56dp</item>
+        <item name="android:layout_margin">2dp</item>
+        <item name="android:background">@drawable/bg_linear_cell</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">#FFC8C8C8</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
+    <style name="CalcKey">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">44dp</item>
+        <item name="android:layout_marginStart">6dp</item>
+        <item name="android:layout_marginEnd">6dp</item>
+        <item name="android:background">@drawable/bg_calc_key</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">#FF616161</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="TableCell">
+        <item name="android:paddingTop">6dp</item>
+        <item name="android:paddingBottom">6dp</item>
+        <item name="android:paddingStart">8dp</item>
+        <item name="android:paddingEnd">8dp</item>
+        <item name="android:textColor">#FFE6E6E6</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+</resources>

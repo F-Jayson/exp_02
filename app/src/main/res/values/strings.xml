@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">exp_02</string>
+    <string name="label_linear">线性布局</string>
+    <string name="label_table">表格布局</string>
+    <string name="label_constraint1">约束布局1</string>
+    <string name="label_constraint2">约束布局2</string>
+    <string name="label_compose">Compose实验</string>
+</resources>

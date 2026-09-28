@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFFFF">
+
+    <TextView
+        android:id="@+id/titleBar"
+        android:layout_width="0dp"
+        android:layout_height="52dp"
+        android:background="#FF00897B"
+        android:gravity="center_vertical"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:text="ConstraintLayoutTest"
+        android:textColor="#FFFFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/inputLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="20dp"
+        android:text="Input"
+        android:textColor="#FF9E9E9E"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/titleBar" />
+
+    <View
+        android:id="@+id/inputBar"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:background="#FFCDB892"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/inputLabel" />
+
+    <TextView
+        android:id="@+id/inputValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:text="0.0"
+        android:textColor="#FF424242"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@id/inputBar"
+        app:layout_constraintEnd_toEndOf="@id/inputBar"
+        app:layout_constraintTop_toTopOf="@id/inputBar" />
+
+    <TextView
+        android:id="@+id/key7"
+        style="@style/CalcKey"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="40dp"
+        android:text="7"
+        app:layout_constraintEnd_toStartOf="@id/key8"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/inputBar" />
+
+    <TextView
+        android:id="@+id/key8"
+        style="@style/CalcKey"
+        android:text="8"
+        app:layout_constraintBottom_toBottomOf="@id/key7"
+        app:layout_constraintEnd_toStartOf="@id/key9"
+        app:layout_constraintStart_toEndOf="@id/key7"
+        app:layout_constraintTop_toTopOf="@id/key7" />
+
+    <TextView
+        android:id="@+id/key9"
+        style="@style/CalcKey"
+        android:text="9"
+        app:layout_constraintBottom_toBottomOf="@id/key7"
+        app:layout_constraintEnd_toStartOf="@id/keyAdd"
+        app:layout_constraintStart_toEndOf="@id/key8"
+        app:layout_constraintTop_toTopOf="@id/key7" />
+
+    <TextView
+        android:id="@+id/keyAdd"
+        style="@style/CalcKey"
+        android:layout_marginEnd="28dp"
+        android:text="+"
+        app:layout_constraintBottom_toBottomOf="@id/key7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/key9"
+        app:layout_constraintTop_toTopOf="@id/key7" />
+
+    <TextView
+        android:id="@+id/key4"
+        style="@style/CalcKey"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="12dp"
+        android:text="4"
+        app:layout_constraintEnd_toStartOf="@id/key5"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/key7" />
+
+    <TextView
+        android:id="@+id/key5"
+        style="@style/CalcKey"
+        android:text="5"
+        app:layout_constraintBottom_toBottomOf="@id/key4"
+        app:layout_constraintEnd_toStartOf="@id/key6"
+        app:layout_constraintStart_toEndOf="@id/key4"
+        app:layout_constraintTop_toTopOf="@id/key4" />
+
+    <TextView
+        android:id="@+id/key6"
+        style="@style/CalcKey"
+        android:text="6"
+        app:layout_constraintBottom_toBottomOf="@id/key4"
+        app:layout_constraintEnd_toStartOf="@id/keyMul"
+        app:layout_constraintStart_toEndOf="@id/key5"
+        app:layout_constraintTop_toTopOf="@id/key4" />
+
+    <TextView
+        android:id="@+id/keyMul"
+        style="@style/CalcKey"
+        android:layout_marginEnd="28dp"
+        android:text="×"
+        app:layout_constraintBottom_toBottomOf="@id/key4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/key6"
+        app:layout_constraintTop_toTopOf="@id/key4" />
+
+    <TextView
+        android:id="@+id/key1"
+        style="@style/CalcKey"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="12dp"
+        android:text="1"
+        app:layout_constraintEnd_toStartOf="@id/key2"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/key4" />
+
+    <TextView
+        android:id="@+id/key2"
+        style="@style/CalcKey"
+        android:text="2"
+        app:layout_constraintBottom_toBottomOf="@id/key1"
+        app:layout_constraintEnd_toStartOf="@id/key3"
+        app:layout_constraintStart_toEndOf="@id/key1"
+        app:layout_constraintTop_toTopOf="@id/key1" />
+
+    <TextView
+        android:id="@+id/key3"
+        style="@style/CalcKey"
+        android:text="3"
+        app:layout_constraintBottom_toBottomOf="@id/key1"
+        app:layout_constraintEnd_toStartOf="@id/keyPlus"
+        app:layout_constraintStart_toEndOf="@id/key2"
+        app:layout_constraintTop_toTopOf="@id/key1" />
+
+    <TextView
+        android:id="@+id/keyPlus"
+        style="@style/CalcKey"
+        android:layout_marginEnd="28dp"
+        android:text="+"
+        app:layout_constraintBottom_toBottomOf="@id/key1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/key3"
+        app:layout_constraintTop_toTopOf="@id/key1" />
+
+    <TextView
+        android:id="@+id/keyDot"
+        style="@style/CalcKey"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="12dp"
+        android:text="."
+        app:layout_constraintEnd_toStartOf="@id/key0"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/key1" />
+
+    <TextView
+        android:id="@+id/key0"
+        style="@style/CalcKey"
+        android:text="0"
+        app:layout_constraintBottom_toBottomOf="@id/keyDot"
+        app:layout_constraintEnd_toStartOf="@id/keyEq"
+        app:layout_constraintStart_toEndOf="@id/keyDot"
+        app:layout_constraintTop_toTopOf="@id/keyDot" />
+
+    <TextView
+        android:id="@+id/keyEq"
+        style="@style/CalcKey"
+        android:text="="
+        app:layout_constraintBottom_toBottomOf="@id/keyDot"
+        app:layout_constraintEnd_toStartOf="@id/keySub"
+        app:layout_constraintStart_toEndOf="@id/key0"
+        app:layout_constraintTop_toTopOf="@id/keyDot" />
+
+    <TextView
+        android:id="@+id/keySub"
+        style="@style/CalcKey"
+        android:layout_marginEnd="28dp"
+        android:text="-"
+        app:layout_constraintBottom_toBottomOf="@id/keyDot"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/keyEq"
+        app:layout_constraintTop_toTopOf="@id/keyDot" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
